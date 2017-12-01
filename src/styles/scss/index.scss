@@ -1,0 +1,9 @@
+@import './_sharedStyles.scss';
+
+body {
+	background-color: $backgroundColor;
+	
+	a:hover {
+		text-decoration: none;
+	}
+}

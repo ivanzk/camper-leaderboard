@@ -1,0 +1,31 @@
+@import './_sharedStyles.scss';
+
+.Main {
+	max-width: 75%;
+	margin: 2vw auto;
+}
+
+@media only screen and (max-width: 991px) {
+	.Main {
+		max-width: 95%;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.Main {
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 374px) {
+	.Main {
+		max-width: 100%;
+		font-size: 0.75rem;
+	}
+}
+
+@media only screen and (min-width: 1920px) {
+	.Main {
+		max-width: 60%;
+	}
+}

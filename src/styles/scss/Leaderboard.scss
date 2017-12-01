@@ -1,0 +1,119 @@
+@import './_sharedStyles.scss';
+
+.Leaderboard {
+	table {
+		border: 4px solid $darkPrimaryColor;
+		background-color: $lightPrimaryColor;
+		color: $primaryTextColor;
+		cursor: default;
+	}
+	
+	thead {
+		border: 4px solid $darkPrimaryColor;
+	}
+	
+	thead th {
+		vertical-align: bottom!important;
+	}
+	
+	thead tr:first-child {
+		background-color: $darkPrimaryColor;
+		color: $textIconsColor;
+	}
+	
+	thead tr:nth-child(1) > th:nth-child(3), th:nth-child(4) {
+		cursor: pointer;
+		transition: .25s;
+	}
+	
+	thead tr:nth-child(1) > th:nth-child(3):hover, th:nth-child(4):hover {
+		background-color: $primaryColor;
+	}
+	
+	tr:hover {
+		td {
+			font-weight: bold;
+		}
+		
+		img {
+			border: 2px solid $darkPrimaryColor;
+			box-shadow: 0px 0px 4px 2px $darkPrimaryColor;
+		}
+	}
+	
+	th, td {
+		vertical-align: middle !important;
+		border: none;
+	}
+	
+	th {
+		text-align: center;
+	}
+	
+	td:nth-child(1) {
+		width: 4%;
+	}
+
+	td:nth-child(2) {
+		width: 40%;
+	}
+	
+	td:nth-child(3) {
+		width: 28%;
+		text-align: center;
+	}
+	
+	td:nth-child(4) {
+		width: 28%;
+		text-align: center;
+	}
+	
+	a {
+		color: $primaryTextColor;
+		font-weight: bold;
+	}
+	
+	i {
+		vertical-align: bottom;
+	}
+	
+	img {
+		max-width: 50px;
+		margin-right: 16px;
+		border-radius: 8px;
+		border: 2px solid $darkPrimaryColor;
+		transition: .25s;
+	}
+	
+	.reactLoadingTd {
+		div {
+			margin: auto;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.Leaderboard {
+		img {
+			max-width: 40px;
+			margin: 4px auto;
+			display: block;
+		}
+		
+		td:nth-child(2) {
+			text-align: center;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.Leaderboard {
+		th:nth-child(1) {
+			max-width: 40px;
+		}
+		
+		td {
+			padding: 4px;
+		}
+	}
+}

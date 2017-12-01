@@ -1,0 +1,25 @@
+.Header {
+  padding: 16px;
+  background-color: #338435;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: default; }
+  .Header a {
+    color: #FFF;
+    transition: .25s; }
+  .Header a:hover {
+    color: #C8E6C9; }
+
+@media only screen and (max-width: 1199px) {
+  .Header {
+    padding: 8px; }
+    .Header h1 {
+      font-size: 2rem; } }
+
+@media only screen and (max-width: 767px) {
+  .Header {
+    text-align: center; }
+    .Header h1 {
+      font-size: 1.5rem; }
+    .Header h4 {
+      font-size: 1.25rem; } }

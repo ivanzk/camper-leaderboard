@@ -1,0 +1,41 @@
+@import './_sharedStyles.scss';
+
+.Header {
+	padding: 16px;
+	background-color: $darkPrimaryColor;
+	color: $textIconsColor;
+	text-align: center;
+	cursor: default;
+	
+	a {
+		color: #FFF;
+		transition: .25s;
+	}
+	a:hover {
+		color: $lightPrimaryColor;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.Header {
+		padding: 8px;
+
+		h1 {
+			font-size: 2rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.Header {
+		text-align: center;
+
+		h1 {
+			font-size: 1.5rem;
+		}
+		
+		h4 {
+			font-size: 1.25rem;
+		}
+	}
+}

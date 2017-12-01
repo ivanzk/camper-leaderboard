@@ -1,0 +1,81 @@
+.Leaderboard table {
+  border: 4px solid #338435;
+  background-color: #C8E6C9;
+  color: #212121;
+  cursor: default; }
+
+.Leaderboard thead {
+  border: 4px solid #338435; }
+
+.Leaderboard thead th {
+  vertical-align: bottom !important; }
+
+.Leaderboard thead tr:first-child {
+  background-color: #338435;
+  color: #FFFFFF; }
+
+.Leaderboard thead tr:nth-child(1) > th:nth-child(3), .Leaderboard th:nth-child(4) {
+  cursor: pointer;
+  transition: .25s; }
+
+.Leaderboard thead tr:nth-child(1) > th:nth-child(3):hover, .Leaderboard th:nth-child(4):hover {
+  background-color: #4CAF50; }
+
+.Leaderboard tr:hover td {
+  font-weight: bold; }
+
+.Leaderboard tr:hover img {
+  border: 2px solid #338435;
+  box-shadow: 0px 0px 4px 2px #338435; }
+
+.Leaderboard th, .Leaderboard td {
+  vertical-align: middle !important;
+  border: none; }
+
+.Leaderboard th {
+  text-align: center; }
+
+.Leaderboard td:nth-child(1) {
+  width: 4%; }
+
+.Leaderboard td:nth-child(2) {
+  width: 40%; }
+
+.Leaderboard td:nth-child(3) {
+  width: 28%;
+  text-align: center; }
+
+.Leaderboard td:nth-child(4) {
+  width: 28%;
+  text-align: center; }
+
+.Leaderboard a {
+  color: #212121;
+  font-weight: bold; }
+
+.Leaderboard i {
+  vertical-align: bottom; }
+
+.Leaderboard img {
+  max-width: 50px;
+  margin-right: 16px;
+  border-radius: 8px;
+  border: 2px solid #338435;
+  transition: .25s; }
+
+.Leaderboard .reactLoadingTd div {
+  margin: auto; }
+
+@media only screen and (max-width: 767px) {
+  .Leaderboard img {
+    max-width: 40px;
+    margin: 4px auto;
+    display: block; }
+  .Leaderboard td:nth-child(2) {
+    text-align: center; } }
+
+@media only screen and (max-width: 575px) {
+  .Leaderboard th:nth-child(1) {
+    max-width: 40px; }
+  .Leaderboard td {
+    padding: 4px; } }
